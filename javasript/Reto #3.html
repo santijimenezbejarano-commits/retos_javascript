@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestor de nombres ordenados</title>
+  <link rel="stylesheet" href="reto3.css">
+  <script src="Reto%20%233.js" defer></script>
+</head>
+<body>
+  <main class="name-manager">
+    <h1>Gestor de nombres</h1>
+
+    <form id="name-form">
+      <label for="name-input">Nombre:</label>
+      <input
+        id="name-input"
+        name="name"
+        type="text"
+        autocomplete="off"
+        placeholder="Escribe un nombre"
+      >
+      <div class="button-row">
+        <button type="submit">Agregar y ordenar nombre</button>
+        <button id="clear-button" class="secondary-button" type="button">Limpiar</button>
+      </div>
+    </form>
+
+    <label for="sorted-names">Nombres ordenados</label>
+    <textarea
+      id="sorted-names"
+      rows="8"
+      readonly
+      placeholder="Aqui apareceran los nombres ordenados"
+    ></textarea>
+    <p id="status-message" class="status-message" aria-live="polite"></p>
+  </main>
+</body>
+</html>
